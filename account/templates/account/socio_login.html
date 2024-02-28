@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Acceso: Al Sistema Administrativo{% endblock %}
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
+
+{% block content %}
+
+<div class="max-w-sm mx-auto ">
+  <h1 class="text-semibold text-2xl text-center ">Acceso</h1>
+  <p class="text-sm my-3">Por favor, utilice el siguiente formulario para iniciar sesión:</p>
+  <form method="post" >
+
+    {{ form.as_p }}
+
+        {% csrf_token %}
+
+
+    <p><input type="submit" value="Acceder" class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"></p>
+  </form>
+  <span class="my-3">
+        <a class="text-blue-700" href="{% url "account:index" %}">Regresar</a>
+    </span>
+</div>
+
+    <p align="center" class="pt-5 text-sm">©2024 Comercializadora Guten Morgen C. A.</p>
+{% endblock %}

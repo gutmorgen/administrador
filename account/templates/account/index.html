@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}Acceso: Al Sistema Administrativo{% endblock %}
+
+
+{% block content %}
+
+
+<div  class="mx-3 text-center border-2 p-4 rounded-lg ">
+<h1 class="font-semibold md:text-2xl text-md ">Acceso</h1>
+
+  <p class="text-sm">Por favor, utilice el siguiente men&uacute; para iniciar sesión:</p>
+  </div>
+
+<div class="fixed  left-0 z-50 w-full  bg-white border-gray-200 dark:bg-gray-700 dark:border-gray-600">
+    <div class="grid  grid-cols-1 md:grid-cols-3 gap-4 font-medium p-4">
+
+
+<a href="#" style="text-decoration: none;" class="relative bg-dark-400 text-dark px-2 py-4 border-2 rounded border-dark">Cliente
+  <div class="text-white absolute right-5 bg-gray-900 rounded-full top-4 h-10 w-10 p-2 ">
+<span class="material-symbols-outlined">
+face
+</span>
+</div>
+</a>
+
+<a href="#" style="text-decoration: none;" class="relative bg-dark-400 text-dark px-2 py-4 border-2 rounded border-dark">Proveedor
+  <div class="text-white absolute right-5 bg-red-800 rounded-full top-4 h-10 w-10 p-2 ">
+<span class="material-symbols-outlined">
+local_shipping
+</span>
+</div>
+</a>
+
+<a href="{% url "account:login"%}" style="text-decoration: none;" class="relative bg-dark-400 text-dark px-2 py-4 border-2 rounded border-dark">Socio
+  <div class="text-white absolute right-5 bg-yellow-500 rounded-full top-4 h-10 w-10 p-2 ">
+<span class="material-symbols-outlined">
+handshake
+</span>
+</div>
+</a>
+
+</div>
+</div>
+<div class="fixed bottom-0 left-0 z-50 w-full h-12 bg-stone-200 border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600">
+      <p align="center" class="text-dark text-sm py-3">©2024 Comercializadora Guten Morgen C. A.</p>
+
+</div>
+
+
+
+{% endblock %}

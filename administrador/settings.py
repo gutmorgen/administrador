@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['adminGutenMorgen.pythonanywhere.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'account',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
