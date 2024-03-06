@@ -28,16 +28,20 @@ DEBUG = True
 ALLOWED_HOSTS = ['adminGutenMorgen.pythonanywhere.com']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
-    'account',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'account.apps.AccountConfig',
+    'shop.apps.ShopConfig',
+
 ]
 
 MIDDLEWARE = [
@@ -129,3 +133,11 @@ MEDIA_ROOT = '/home/adminGutenMorgen/administrador/media'
 MEDIA_URL = '/media/'
 STATIC_ROOT = '/home/adminGutenMorgen/administrador/static'
 STATIC_URL = '/static/'
+
+LOGIN_REDIRECT_URL = '/panel_socio'
+
+
+
+
+
+

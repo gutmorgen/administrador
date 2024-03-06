@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Acceso: Al Sistema Administrativo{% endblock %}
+{% block content %}
+
+<div class="max-w-sm mx-auto mt-5">
+
+  <h1 class="text-semibold text-2xl mb-3 ">Bienvenido estimado socio!</h1>
+    {% if form.errors %}
+     <p >
+       Su usuario y contraseña no coinciden.
+       Intente de nuevo.
+     </p>
+    {% else %}
+   <p class="text-sm mb-5 ">Por favor, utilice el siguiente formulario para iniciar sesión:</p>
+    {% endif %}
+      <form method="post" >
+            {% csrf_token %}
+            {{ form.as_p }}
+
+    <input type="hidden" name="next" value="{{ next }}">
+    <input type="submit" value="Acceder">
+
+     <span class="text-right" >
+        <a class="text-black border-2 border-black p-2.5 rounded" href="{% url "account:index" %}">Regresar</a>
+    </span>
+
+  </form>
+
+
+</div>
+
+{% endblock %}
