@@ -134,7 +134,7 @@ MEDIA_URL = '/media/'
 STATIC_ROOT = '/home/adminGutenMorgen/administrador/static'
 STATIC_URL = '/static/'
 
-LOGIN_REDIRECT_URL = '/panel_socio'
+LOGIN_REDIRECT_URL = 'shop:product_list'
 
 
 
