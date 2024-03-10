@@ -1,66 +1,12 @@
-/* forms */
-form {
-    overflow:auto;
-}
-
-form p {
-    width:100%;
-    overflow:auto;
-}
-
-label {
-    float:left;
-    clear:both;
-    color:#333;
-    margin-bottom:4px;
-}
-
-
 input[type=text] {
-
-    clear:both;
-    float:left;
-    margin:0 0 10px;
+    border: 1px  solid #ccc;
     border-radius: 4px;
-    border-style:solid;
-    padding:6px 10px;
-    font-size:14px;
-    outline: none;
+    background-color: white;
 
-}
+  }
 
-
-
-
-input[type=password] {
-    clear:both;
-    float:left;
-    margin:0 0 10px;
+  input[type=password] {
+    border: 1px solid #ccc;
     border-radius: 4px;
-    padding:6px 10px;
-    font-size:14px;
-    outline: none;
-}
-input[type=submit], a.button {
-    font-weight:bold;
-    background:#000;
-    border-radius:4px;
-    color:#fff;
-    padding:10px 20px;
-    font-size:14px;
-
-
-}
-.errorlist {
-    color:#cc0033;
-    float:left;
-    clear:both;
-    padding-left:10px;
-}
-.helptext {
-    margin:0 0 20px 0;
-    color:#aaa;
-    clear:both;
-    float:left;
-    font-size:13px;
-}
+    background-color: white;
+  }
